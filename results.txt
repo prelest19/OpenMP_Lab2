@@ -1,0 +1,108 @@
+================================================================
+Laboratory Work #2: Parallel Matrix Multiplication (OpenMP)
+================================================================
+OpenMP supported. Max threads: 12
+
+=== EXPERIMENTS ===
+
+--- Matrix size: 200 x 200 ---
+Sequential run...
+  Time: 0.0025 sec
+Parallel run (1 threads)...
+  Time: 0.0026 sec | Speedup: 0.98x
+Parallel run (2 threads)...
+  Time: 0.0021 sec | Speedup: 1.22x
+Parallel run (4 threads)...
+  Time: 0.0015 sec | Speedup: 1.65x
+Parallel run (8 threads)...
+  Time: 0.0014 sec | Speedup: 1.85x
+
+--- Matrix size: 400 x 400 ---
+Sequential run...
+  Time: 0.0199 sec
+Parallel run (1 threads)...
+  Time: 0.0216 sec | Speedup: 0.92x
+Parallel run (2 threads)...
+  Time: 0.0118 sec | Speedup: 1.69x
+Parallel run (4 threads)...
+  Time: 0.0066 sec | Speedup: 3.01x
+Parallel run (8 threads)...
+  Time: 0.0068 sec | Speedup: 2.94x
+
+--- Matrix size: 800 x 800 ---
+Sequential run...
+  Time: 0.1511 sec
+Parallel run (1 threads)...
+  Time: 0.1470 sec | Speedup: 1.03x
+Parallel run (2 threads)...
+  Time: 0.0783 sec | Speedup: 1.93x
+Parallel run (4 threads)...
+  Time: 0.0537 sec | Speedup: 2.81x
+Parallel run (8 threads)...
+  Time: 0.0433 sec | Speedup: 3.49x
+
+--- Matrix size: 1200 x 1200 ---
+Sequential run...
+  Time: 0.6298 sec
+Parallel run (1 threads)...
+  Time: 0.5874 sec | Speedup: 1.07x
+Parallel run (2 threads)...
+  Time: 0.2853 sec | Speedup: 2.21x
+Parallel run (4 threads)...
+  Time: 0.1815 sec | Speedup: 3.47x
+Parallel run (8 threads)...
+  Time: 0.1321 sec | Speedup: 4.77x
+
+--- Matrix size: 1600 x 1600 ---
+Sequential run...
+  Time: 1.8888 sec
+Parallel run (1 threads)...
+  Time: 2.0069 sec | Speedup: 0.94x
+Parallel run (2 threads)...
+  Time: 1.0471 sec | Speedup: 1.80x
+Parallel run (4 threads)...
+  Time: 0.5502 sec | Speedup: 3.43x
+Parallel run (8 threads)...
+  Time: 0.3311 sec | Speedup: 5.70x
+
+--- Matrix size: 2000 x 2000 ---
+Sequential run...
+  Time: 3.9443 sec
+Parallel run (1 threads)...
+  Time: 3.9530 sec | Speedup: 1.00x
+Parallel run (2 threads)...
+  Time: 2.1395 sec | Speedup: 1.84x
+Parallel run (4 threads)...
+  Time: 1.1665 sec | Speedup: 3.38x
+Parallel run (8 threads)...
+  Time: 0.7199 sec | Speedup: 5.48x
+
+
+================================================================
+SUMMARY TABLE - TIME (seconds)
+================================================================
+Size    | Sequential | 1 thr | 2 thr | 4 thr | 8 thr | 
+--------|------------|-------|-------|-------|-------|
+   200 | 0.0025 | 0.0026 | 0.0021 | 0.0015 | 0.0014 | 
+   400 | 0.0199 | 0.0216 | 0.0118 | 0.0066 | 0.0068 | 
+   800 | 0.1511 | 0.1470 | 0.0783 | 0.0537 | 0.0433 | 
+  1200 | 0.6298 | 0.5874 | 0.2853 | 0.1815 | 0.1321 | 
+  1600 | 1.8888 | 2.0069 | 1.0471 | 0.5502 | 0.3311 | 
+  2000 | 3.9443 | 3.9530 | 2.1395 | 1.1665 | 0.7199 | 
+
+
+================================================================
+SPEEDUP TABLE (S = T_seq / T_par)
+================================================================
+Size    | 1 thr | 2 thr | 4 thr | 8 thr | 
+--------|-------|-------|-------|-------|
+   200 | 0.98x | 1.22x | 1.65x | 1.85x | 
+   400 | 0.92x | 1.69x | 3.01x | 2.94x | 
+   800 | 1.03x | 1.93x | 2.81x | 3.49x | 
+  1200 | 1.07x | 2.21x | 3.47x | 4.77x | 
+  1600 | 0.94x | 1.80x | 3.43x | 5.70x | 
+  2000 | 1.00x | 1.84x | 3.38x | 5.48x | 
+
+================================================================
+Experiments completed!
+================================================================

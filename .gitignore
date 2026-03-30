@@ -1,0 +1,5 @@
+*.exe
+*.o
+*.out
+data/*.txt
+!data/.gitkeep
